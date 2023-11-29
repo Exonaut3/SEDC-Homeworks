@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+
+header {
+    background-color: #3B5998;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    min-width: 400px;
+}
+
+body {
+    background: rgb(254,254,254);
+background: linear-gradient(180deg, rgba(254,254,254,1) 0%, rgba(234,237,244,1) 35%, rgba(217,220,235,1) 100%);
+height: 1000px
+}
+
+
+
+
+@media screen and (max-width : 1300px) {
+    .fb-pic {
+      width: 0;
+      height: 0;
+    }
+    #facebook-logo{
+        display: none;
+    }
+ 
+}
+
+
+.fb-pic {
+    width: 55%;
+    display: flex;
+    color: #32537a;
+    font-size: 25px;
+z-index: 2;
+align-items: center;
+padding-top: 40px;
+overflow: hidden;
+flex-direction: column;
+
+flex-wrap: wrap;
+position: relative
+}
+
+#facebook-logo {
+    margin-top: 10px;
+}
+
+#formContainer {
+    background-color: #3B5998;
+    color: white;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    gap: 10px;
+    align-content: center;
+    
+    padding-bottom: 10px;
+}
+
+
+.interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+
+#login {
+    background-color: rgb(84, 111, 170);
+    color: white;
+    padding: 5px;
+}
+
+#forgot {
+    color: #a9c3ff;
+    text-decoration: none;
+}
+
+#forgot:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    
+    height: 100%;
+}
+
+.acc-creator {
+    display: flex;
+       flex-direction: column;
+    padding-top: 35px;
+    gap: 5px;
+    width: 45%;
+   
+  overflow: hidden;
+min-width: 400px;
+z-index: 100;
+position: absolute;
+top: inherit;
+right: inherit;
+right: 0;
+
+}
+
+#first-name {
+    height: 50px;
+    border-radius: 7px;
+    width: 252px;
+    font-size: larger;
+    border-color: rgb(219, 219, 219);
+}
+
+#surname {
+    height: 50px;
+    border-radius: 7px;
+    width: 253px;
+    font-size: larger;
+    border-color: rgb(219, 219, 219);
+}
+
+#mn-or-email {
+    height: 50px;
+    border-radius: 7px;
+    width: 510px;
+    font-size: larger;
+    border-color: rgb(219, 219, 219);
+}
+
+#new-pass {
+    height: 50px;
+    border-radius: 7px;
+    border-color: rgb(219, 219, 219);
+    width: 510px;
+    font-size: larger;
+}
+
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+
+
+#helps-connect{
+    width: 45ch;
+}
+#world{
+    padding-top: 20px;
+    width: 700px;
+    height: 300px;
+}
+.disclaimer {
+    font-size: small;
+    width: 50ch;
+}
+
+#sign-up {
+    background-color: #62A450;
+    width: 233px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+
+}
+
+#day {
+    height: 30px;
+    width: 45px;
+
+}
+
+#month {
+    height: 30px;
+    width: 55px;
+}
+
+#year {
+    height: 30px;
+    width: 55px;
+}
+
+#larger {
+    font-size: larger;
+}
