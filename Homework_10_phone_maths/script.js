@@ -1,4 +1,4 @@
-let phonePrice = 199.95;
+let phonePrice = 119.95;
 let taxRate = 0.05;
 let numberOfPhones = 30;
 let priceTimesPhones = phonePrice * numberOfPhones;
@@ -13,5 +13,5 @@ function finalprice(phonePrice, taxRate, numberOfPhones){
     return rezultat2;
 }
 
-let rezultat2 = finalprice(199.95, 0.05, 30)
+let rezultat2 = finalprice(119.95, 0.05, 30)
 console.log(rezultat2+"$");
