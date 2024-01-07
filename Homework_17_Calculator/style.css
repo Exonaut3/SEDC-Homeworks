@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    background-color: rgb(178, 103, 240);
+    text-align: end;
+    width: 400px;
+    height: 25px;
+    text-wrap: pretty;
+    overflow: hidden;
+
+}
+
+h3 {
+    background-color: blueviolet;
+    text-align: end;
+    width: 400px;
+    height: 25px;
+    text-wrap: wrap;
+    overflow: hidden;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-size: larger;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: rgb(129, 2, 248);
+}
+
+button:hover{
+    background-color: indigo;
+}
+
+body {
+    background-color: black;
+}
+
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: purple solid 3px;
+}
+
+#coolText {
+    width: 600px;
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    width: 600px;
+}
+
+#equals {
+    width: 400px;
+
+}
+
+#c {
+    width: 300px;
+
+}
+
+#zero {
+    width: 200px;
+}
+
+#actualCalculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border: purple solid 3px;
+
+    background-image: url(./Assets/purplelightning.jpg);
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
