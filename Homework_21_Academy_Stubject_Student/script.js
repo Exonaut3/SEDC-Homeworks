@@ -44,13 +44,13 @@ class Student {
         this.lastName = lastName
         this.age = age
         this.completedSubjects = []
-        this.academy = null
+        this.academy === undefined ? null : academy
         this.currentSubject === undefined ? null : currentSubject
 
     }
 
     startAcademy(academy) {
-        this.academy = academy
+        this.academy = academy;
     }
     startSubject(subject) {
         if (this.academy = null) {
@@ -86,7 +86,7 @@ let academy = new Academy(`Qinshift Academy`, [student1, student2, student3, stu
 htmlSubject.overrideClasses(4)
 jsSubject.overrideClasses(2)
 
-student1.startAcademy(academy)
+student1.startAcademy(`Academy`)
 student2.startAcademy(academy)
 student3.startAcademy(academy)
 student4.startAcademy(academy)
