@@ -49,8 +49,8 @@ class Student {
 
     }
 
-    startAcademy(academy) {
-        this.academy = academy;
+    startAcademy(input) {
+        this.academy = input;
     }
     startSubject(subject) {
         if (this.academy = null) {
