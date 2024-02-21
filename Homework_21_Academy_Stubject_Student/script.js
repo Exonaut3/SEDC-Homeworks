@@ -44,13 +44,13 @@ class Student {
         this.lastName = lastName
         this.age = age
         this.completedSubjects = []
-        this.academy === undefined ? null : academy
+        this.academy = null
         this.currentSubject === undefined ? null : currentSubject
 
     }
 
-    startAcademy(academy) {
-        this.academy = academy;
+    startAcademy(input) {
+        this.academy = input.name;
     }
     startSubject(subject) {
         if (this.academy = null) {
@@ -80,16 +80,19 @@ let nodeJsScubject = new Subject(`Node JS`, true, undefined,[student1, student2,
 //cannot give the academy property because academy is initialized after and I cannot do it before unless I do a method or smthing :((((
 
 
-let academy = new Academy(`Qinshift Academy`, [student1, student2, student3, student4, student5], [htmlSubject, jsSubject, nodeJsScubject], `10/08/2024`, `10/08/2025`)
+let qinshift = new Academy(`Qinshift Academy`, [student1, student2, student3, student4, student5], [htmlSubject, jsSubject, nodeJsScubject], `10/08/2024`, `10/08/2025`)
 
 
 htmlSubject.overrideClasses(4)
 jsSubject.overrideClasses(2)
 
 student1.startAcademy(`Academy`)
-student2.startAcademy(academy)
-student3.startAcademy(academy)
-student4.startAcademy(academy)
+student2.startAcademy(qinshift)
+student3.startAcademy(qinshift)
+student4.startAcademy(qinshift)
+//for some reason will NOT give me the academy in clg no matter what
+
+
 
 student1.startSubject([htmlSubject])
 student2.startSubject([jsSubject])
@@ -102,7 +105,7 @@ student3.startSubject([htmlSubject])
 
 
 
-console.log(academy);
+console.log(qinshift);
 // academy.printStudents()
 // academy.printSubjects()
 
