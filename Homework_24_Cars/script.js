@@ -120,7 +120,7 @@ function retardFunction() {
                 console.log(container);
             }
             if (modelCheckbox.checked) {
-                container = container.filter(response => response.model.toLowerCase() == searchByModel.value.toLowerCase())
+                container = container.filter(response => response.model.toLowerCase().includes( searchByModel.value.toLowerCase()))
                 console.log(`Model box checked`);
                 console.log(container);
             }
