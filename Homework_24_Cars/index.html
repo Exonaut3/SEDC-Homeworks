@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    TYPE
+    <br>
+    <input type="checkbox" class="checkboxClass" name="" id="typeCheckbox">
+    <select name="" class="inputReciever" id="selectorForType">
+        <option class="typeValue" value="SUV">SUV</option>
+        <option class="typeValue" value="Sedan">Sedan</option>
+        <option class="typeValue" value="Hatchback">Hatchback</option>
+        <option class="typeValue" value="Convertible">Convertible</option>
+        <option class="typeValue" value="Truck">Truck</option>
+        <option class="typeValue" value="Coupe">Coupe</option>
+    </select>
+
+    <br>
+    BRAND
+    <br>
+    <input type="checkbox" class="checkboxClass" name="" id="brandCheckbox">
+    <select name="" class="inputReciever" id="selectorForBrand">
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Ford">Ford</option>
+        <option value="BMW">BMW</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Mercedes-Benz">Mercedes-Benz</option>
+        <option value="Honda">Honda</option>
+        <option value="Nissan">Nissan</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Ram">Ram</option>
+        <option value="Audi">Audi</option>
+        <option value="Kia">Kia</option>
+        <option value="Subaru">Subaru</option>
+        <option value="Fiat">Fiat</option>
+    </select>
+
+    <br>
+    MODEL
+    <br>
+    <input type="checkbox" class="checkboxClass" name="" id="modelCheckbox">
+    <input type="text" class="inputReciever" name="" id="searchByModel">
+    <br>
+    DOORS
+    <br>
+    <input type="checkbox" class="checkboxClass" name="" id="doorsCheckbox">
+    <input type="number" class="inputReciever" min="2" max="5" name="" id="searchByDoors">
+    <br>
+    GAS TYPE
+    <br>
+    <input type="checkbox" class="checkboxClass" name="" id="gasTypeCheckbox">
+    <select name="gasType" class="inputReciever" id="selectorForGasType">
+        <option value="Diesel">Diesel</option>
+        <option value="Gasoline">Gasoline</option>
+        <option value="Petrol">Petrol</option>
+        <option value="Hybrid">Hybrid</option>
+        <option value="Electric">Electric</option>
+    </select>
+<br>
+COLOR
+<br>
+<input type="checkbox" class="checkboxClass" name="" id="colorCheckbox">
+<input type="text" class="inputReciever" name="" id="searchByColor">
+
+    <br>
+    OLD/NEW
+    <br>
+    <input type="checkbox" class="checkboxClass" name="" id="isNewCheckbox">
+    |
+    OLD <input type="checkbox" class="checkboxClass" name="" id="oldCheckbox">
+    NEW <input type="checkbox" class="checkboxClass" name="" id="newCheckbox">
+<br>
+HORSEPOWER
+<br>
+<input type="checkbox" class="checkboxClass" name="" id="horsepowerCheckbox">
+<input type="range" class="inputReciever" name="" id="horsepower" value="100" min="80" max="300" oninput="this.nextElementSibling.value = this.value">
+Up to
+<output>100</output> horsepower
+
+    <br><br>
+    <button id="searchButton"> SEARCH BUTTON</button>
+    <button id="resetFiltersButton">RESET FILTERS</button>
+
+    <table border="2px" id="table">
+
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
