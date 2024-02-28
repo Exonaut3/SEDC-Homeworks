@@ -50,7 +50,11 @@ class Student {
     }
 
     startAcademy(input) {
+<<<<<<< HEAD
         this.academy = input.name;
+=======
+        this.academy = input;
+>>>>>>> 2fd7043d8fd825e30cb3e195384fb53d2f80e8fb
     }
     startSubject(subject) {
         if (this.academy = null) {
